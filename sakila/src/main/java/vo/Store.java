@@ -29,4 +29,9 @@ public class Store { // 도메인 일치
 	public void setLastUpdate(String lastUpdate) {
 		this.lastUpdate = lastUpdate;
 	}
+	@Override
+	public String toString() {
+		return "Store [storeId=" + storeId + ", managerStaffId=" + managerStaffId + ", addressId=" + addressId
+				+ ", lastUpdate=" + lastUpdate + "]";
+	}
 }
