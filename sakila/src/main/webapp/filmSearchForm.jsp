@@ -49,6 +49,7 @@
 			<tr>
 				<td>대여료</td>
 				<td>
+					<div><input type="radio" name="price" value="" checked="checked">선택안함</div>
 					<%
 						for(Double p : priceList) {
 					%>
@@ -56,6 +57,32 @@
 					<%		
 						}
 					%>
+				</td>
+			</tr>
+			<tr>
+				<td>영화시간</td>
+				<td>
+					<div><input type="radio" name="length" value="" checked="checked">선택안함</div>
+					<div><input type="radio" name="length" value="0">1시간 이하</div><!-- lenght 0~60 -->
+					<div><input type="radio" name="length" value="1">1~2시간</div><!-- lenght 61~120 -->
+					<div><input type="radio" name="length" value="2">2시간 초과</div><!-- lenght 121~ -->
+				</td>
+			</tr>
+			<tr>
+				<td>제목 검색</td>
+				<td>
+					<input type="text" name="title">
+				</td>
+			</tr>
+			<tr>
+				<td>배우 검색</td>
+				<td>
+					<input type="text" name="actor">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button type="submit">검색</button>
 				</td>
 			</tr>
 		</table>
