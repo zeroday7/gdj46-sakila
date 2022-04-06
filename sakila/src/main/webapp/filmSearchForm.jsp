@@ -21,7 +21,7 @@
 			<tr>
 				<td>카테고리</td>
 				<td>
-					<select name="categoryName">
+					<select name="category">
 						<option value="">카테고리선택</option>
 						<%
 							for(Category c : categoryList) {
@@ -63,9 +63,8 @@
 				<td>영화시간</td>
 				<td>
 					<div><input type="radio" name="length" value="" checked="checked">선택안함</div>
-					<div><input type="radio" name="length" value="0">1시간 이하</div><!-- lenght 0~60 -->
-					<div><input type="radio" name="length" value="1">1~2시간</div><!-- lenght 61~120 -->
-					<div><input type="radio" name="length" value="2">2시간 초과</div><!-- lenght 121~ -->
+					<div><input type="radio" name="length" value="0">1시간 미만</div><!-- lenght < 60 -->
+					<div><input type="radio" name="length" value="1">1시간 이상</div><!-- lenght >= 60 -->
 				</td>
 			</tr>
 			<tr>
