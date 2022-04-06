@@ -16,7 +16,7 @@
 	String title = request.getParameter("title");
 	String actor = request.getParameter("actor");
 	
-	int beginRow = 1;
+	int beginRow = 0;
 	int rowPerPage = 10;
 	
 	FilmDao filmDao = new FilmDao();

@@ -51,6 +51,8 @@ public class FilmDao {
 				stmt.setInt(4, beginRow);
 				stmt.setInt(5, rowPerPage);
 			} // 13(+알파)개의 쿼리 분기
+			
+			
 			rs = stmt.executeQuery();
 			while(rs.next()) {
 				FilmList f = new FilmList();
